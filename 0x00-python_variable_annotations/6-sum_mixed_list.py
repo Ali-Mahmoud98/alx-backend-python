@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """ Sum mixed list function. """
 
-from typing import List
+from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[float]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """Sums a list of numbers.
 
     Args:
@@ -13,4 +13,4 @@ def sum_mixed_list(mxd_lst: List[float]) -> float:
     Returns:
         float: The sum of the list of numbers.
     """
-    return sum(mxd_lst)
+    return float(sum(mxd_lst))
